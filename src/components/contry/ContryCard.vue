@@ -79,7 +79,7 @@
 </template>
 
 <script setup lang="ts">
-import type { IContry } from '@/interfaces/Country'
+import type { IContry } from '../../interfaces/contry'
 import { ref } from 'vue'
 const isModalVisible = ref(false)
 const prop = defineProps(['contry'])

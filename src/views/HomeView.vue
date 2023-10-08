@@ -4,7 +4,7 @@ import ContryCard from '@/components/contry/ContryCard.vue'
 import ErrorLabel from '@/components/ErrorLabel.vue'
 import LoadingSping from '@/components/LoadingSping.vue'
 import Fuse from 'fuse.js'
-import type { IContry, IPagination } from '@/interfaces/Country'
+import type { IContry, IPagination } from '../interfaces/contry'
 
 enum sortDirection {
   Ascending = 'asc',
