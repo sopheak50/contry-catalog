@@ -171,9 +171,13 @@ function popUpModal(isOpen?: boolean) {
         >
           <ContryCard :contry="contry"></ContryCard>
         </div>
+        <div v-if="displayContries?.length == 0" class="m-auto p-20">
+          <h1>No content</h1>
+        </div>
       </div>
     </div>
 
     <!-- Modal -->
   </div>
 </template>
+@/interfaces/country@/interfaces/contry
