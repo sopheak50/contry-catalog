@@ -1,15 +1,14 @@
 <template>
   <div class="my-2 px-2">
     <div
-      v-on:click="popUpModal(true)"
-      class="overflow-hidden cursor-pointer border border-gray-100 rounded-lg shadow-sm"
+      class="overflow-hidden  border border-gray-100 rounded-lg shadow-sm"
     >
       <img alt="Placeholder" class="block h-40 object-contain w-full" :src="contry.flags.png" />
 
       <div class="p-2 md:p-4">
-        <div class="font-bold truncate">
+        <a v-on:click="popUpModal(true)" class="cursor-pointer underline font-bold truncate">
           {{ contry.name.official }}
-        </div>
+        </a>
         <p>{{ contry.cca2 }}</p>
         <p>{{ contry.cca3 }}</p>
       </div>
